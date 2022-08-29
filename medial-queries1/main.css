@@ -1,3 +1,39 @@
 body {
-  background: blanchedalmond;
+  background: white;
+}
+
+/* *{
+  border: 1px solid teal;
+} */
+
+.container{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color:#82AEB1; 
+  text-align: center;
+}
+
+.a{
+background-color:#3E8989;
+height: 20vh;
+}
+
+.b{
+flex-grow: 5;
+}
+
+.c{
+background-color: #046865 ;
+flex-grow: 1;
+}
+
+@media(min-width: 600px) {
+  .container{
+    flex-direction: row;
+  }
+  .a{
+    height: 50vh;
+  }
 }

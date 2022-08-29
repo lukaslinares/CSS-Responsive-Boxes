@@ -1,20 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
-    <meta charset="utf-8">
-    <title>Media Queries 3</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./main.css">
   </head>
   <body>
     <div class="container">
-      <div class="a">a</div>
-      <div class="b">b</div>
-      <div class="c">c</div>
-      <div class="d">d</div>
-      <div class="e">e</div>
-      <div class="f">f</div>
-      <div class="g">g</div>
-      <div class="h">h</div>
+      <div class="a child">A</div>
+      <div class="flex">
+        <div class="parent">
+          <div class="child-parent">
+          <div class="b child">B</div>
+          <div class="c child">C</div>
+          <div class="d child">D</div>
+        </div>
+          <div class="child-parent">
+            <div class="e child">E</div>
+            <div class="f child">F</div>
+            <div class="g child">G</div>
+          </div>
+        </div>
+        <div class="parent-2">
+          <div class="h child">H</div>
+        </div>
+      </div>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>

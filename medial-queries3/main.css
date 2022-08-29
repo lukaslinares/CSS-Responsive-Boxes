@@ -1,3 +1,96 @@
 body {
-  background: peachpuff;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container{
+  text-align: center;
+}
+
+/* .child {
+  border: 1px solid black;
+} */
+
+.flex {
+  display: flex;
+}
+
+.flex > .parent {
+  width: 75%;
+}
+
+.flex > .parent-2 {
+  width: 25%;
+}
+
+.child-parent {
+  display: flex;
+}
+
+.child-parent> * {
+  flex: 1;
+}
+
+.a{
+  height: 30vh;
+  background-color: cyan;
+}
+
+.b{
+  background-color:cornflowerblue;
+}
+
+.c{
+background-color:aquamarine;
+}
+
+.d{
+background-color:teal;
+}
+
+.e{
+  background-color: orchid;
+}
+
+.f{
+background-color: violet;
+}
+
+.g{
+  background-color: plum;
+}
+
+.h{
+  background-color:deepskyblue;
+  height:70.25vh;
+}
+
+.b,.c,.d,.e,.f,.g{
+  height:35vh;
+}
+
+@media (max-width: 600px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex > .parent {
+    width: 100%;
+  }
+
+  .flex > .parent-2 {
+    width: 100%;
+  }
+
+  .a{
+    height: 25vh;
+  }
+
+  .b,.c,.d, .e, .f, .g{
+    height: 25vh;
+  }
+
+  .h{
+    height:25vh;
+  }
 }
